@@ -67,7 +67,7 @@ class Login {
 
   login(req, res) {
     /*
-      This can be exploited (similar to SQL Injection) when the request body is
+      This can be exploited (similar to SQL Injection) when the request body is*/
       {
         "password": {
           "$gt": ""
@@ -76,7 +76,7 @@ class Login {
           "$gt": ""
         }
       }
-    */
+    
     const { username, password, encodedPath, keeponline } = req.body;
     const data = { username, password, keeponline };
     logger.debug(data);
